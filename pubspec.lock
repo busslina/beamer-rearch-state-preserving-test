@@ -9,6 +9,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.11.0"
+  beamer:
+    dependency: "direct main"
+    description:
+      name: beamer
+      sha256: c32c5dea11c178fca271f2cce8f3bce4bc0ad761a2b69978573c4e75e991abf9
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.6.1"
   boolean_selector:
     dependency: transitive
     description:
@@ -62,8 +70,21 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "3.0.2"
+  flutter_rearch:
+    dependency: "direct main"
+    description:
+      name: flutter_rearch
+      sha256: d11e8f1f3f2fd1bc843ae6924a7a5064b9e03d6f594726171f74dcaf685803d0
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.6.1"
   flutter_test:
     dependency: "direct dev"
+    description: flutter
+    source: sdk
+    version: "0.0.0"
+  flutter_web_plugins:
+    dependency: transitive
     description: flutter
     source: sdk
     version: "0.0.0"
@@ -131,6 +152,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.9.0"
+  rearch:
+    dependency: "direct main"
+    description:
+      name: rearch
+      sha256: "8c2cdc920185f3e83fb83783a260086de1b32780e37607d834916412f3331417"
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.8.0+0"
   sky_engine:
     dependency: transitive
     description: flutter
@@ -202,3 +231,4 @@ packages:
     version: "13.0.0"
 sdks:
   dart: ">=3.3.4 <4.0.0"
+  flutter: ">=3.19.0"
