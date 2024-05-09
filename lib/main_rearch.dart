@@ -17,13 +17,17 @@ class MainApp extends StatelessWidget {
       routerDelegate: BeamerDelegate(
         locationBuilder: RoutesLocationBuilder(
           routes: {
-            '/': (context, state, data) => const BeamPage(
-                  key: ValueKey('index'),
-                  child: IndexScreenRearch(),
+            '/': (context, state, data) => BeamPage(
+                  key: const ValueKey('index'),
+                  child: const IndexScreenRearch(),
+                  title: _getTitle(),
+                  type: BeamPageType.fadeTransition,
                 ),
-            '/profile': (context, state, data) => const BeamPage(
-                  key: ValueKey('profile'),
-                  child: ProfileScreenRearch(),
+            '/profile': (context, state, data) => BeamPage(
+                  key: const ValueKey('profile'),
+                  child: const ProfileScreenRearch(),
+                  title: _getTitle(),
+                  type: BeamPageType.fadeTransition,
                 ),
           },
         ).call,
@@ -31,3 +35,5 @@ class MainApp extends StatelessWidget {
     );
   }
 }
+
+String _getTitle() => DateTime.now().toIso8601String();
